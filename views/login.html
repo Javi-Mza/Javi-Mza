@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Busca al fuente(en este caso es la ruta de Roboto) -->
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+
+            <div class="bloq-busqueda">
+                <div class="logo">
+                    <img src="./images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre">
+                </div>
+
+                <!-- <div class="busqueda">
+                    Buscar productos,marcas
+                </div>
+
+                <div class="icono"><i class="fa fa-search"></i></div> -->
+                <div class="form" action="/searcher" method="GET">
+                    <div class="busqueda">Buscar productos, marcas y más</div>
+                <div class=" tarjeta">
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito </p>
+            </div>
+        </div>
+        <nav class="padre">
+            <div>
+                <ul class="tienda">
+                    <li><a href="#">Ofertas</a></li><!-- pongo etiqueta "a" porque necesito tomar de enlace externo -->
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <ul class="datos">
+                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#">Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-hamburguesa">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+
+    <main class="login">
+        <form >
+            <div class="form-item">
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" name="usuario"  class="form-item"  placeholder="Nombre de usuario" id="user">
+            </div>
+            <div class="form-item">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" class="form-item" placeholder="Elegí tu contraseña" id="password">
+            </div>
+            <button type="button" onclick="location.href='/'" >Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <ul class="footer-items">
+        <section >
+            <div class="icono-pie"><i class="fas fa-credit-card"></i></div>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con MecadoLiebreCash tenés coutas sin interés con tarjeta o efectivo en puntos de pago.¡Y siempre es
+                seguro!</p>
+        </section>
+
+        <section>
+            <div class="icono-pie"><i class="fas fa-gift"></i></div>
+            <h4>Envío gratis desde los $2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
+        </section>
+
+        <section>
+            <div class="icono-pie"><i class="fas fa-user-shield"></i></div>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                protegid@.</p>
+        </section>
+
+        <section>
+        </ul>
+            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        </section>
+
+
+
+    </footer>
+</body>
+
+</html>

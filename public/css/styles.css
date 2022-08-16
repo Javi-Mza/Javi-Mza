@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento,
+.descripcion {
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+   
+}
+
+header div.logo,
+header .form {
+    width: 50%;
+
+}
+header div p {
+    padding: 2px;
+
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+
+    list-style-type: none;
+    /* para no tener los puntitos propios de listas */
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+div.encabezado{
+    
+    padding: 5%;
+    
+}
+
+header div.encabezado p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header div.logo,
+header .form{
+    width: 100%;
+}
+
+header div.bloq-busqueda {
+    margin-left: 1rem;
+    text-align: left;
+    outline: none;
+}
+header div.logo{
+    padding: 10px;
+}
+header div .busqueda {
+    background-color: #FFF;
+    color: #666;
+    border: solid 2px #000;
+    padding: 2px;
+    text-align: left;
+    outline: none;
+
+}
+header .form.icono{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header div.icono {
+    background-color: #FFF;
+    color: #666;
+    border: solid 2px #000;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+header div.tarjeta {
+    text-align: center;
+}
+
+div.menu-hamburguesa {
+    text-align: center;
+}
+
+div.menu-hamburguesa i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 20px;
+}
+div.visita,
+div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+h3,.descripcion {
+    color:rgba(0, 0,255, 0);
+   
+    margin-top: 20px;
+}
+h3,.descripcion:hover {
+    color: #666;
+   
+    margin-top: 20px;
+}
+
+section.banner img {
+    width: 100vw;
+}
+
+main {
+    width: 90%;
+}
+div.ultima-visita,
+div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.ayuda{
+    display:flex;
+   
+}
+.precio {
+    font-size: 18px;
+}
+
+article div.datos-articulo {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main section article {
+    background-color: #fff;
+    margin:10px 0px
+}
+
+main section article img {
+    width: 100%;
+   
+}
+
+main section article i,
+.descuento {
+    color: #39b54a;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+}
+.articulo:hover .fa-truck{
+    transform:rotate(-90deg);
+    transition:0.8s
+}
+.articulo:hover .descripcion{
+    opacity: 1;
+}
+
+
+.descuento{
+    width: 70%;
+}
+
+.boton-ingresar:hover{
+    background-color: #0022AA;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .icono-pie {
+    color: #0044AA;
+    font-size: 2rem;
+
+}
+footer .icono-pie:hover{
+    color:#39b54a
+}
+.footer-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:20px ;
+}
+.form-item label{
+    display: block;
+    padding: 10px 0px;
+    font-size: 14px;
+
+}
+.form-item input{
+    display: block;
+    padding: 5px;
+    font-size: 13px;
+
+}
+.button-ingresar{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #cfcfcf;
+    background-color: #03264C;
+    border-radius: 6px;
+    height: 30px;
+    display: block;
+    max-width: 768px;
+}
+
+
+@media (min-width: 361px) {
+ 
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+        main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+   main section div.productos article{
+        width: 45%;
+    }
+    main section article .descripcion{
+        display: block;
+    }
+    .precio,
+    .descuento{
+        width: 50%;
+    } 
+ 
+}
+@media (min-width: 769px) {
+    main section div.productos article, main section article {
+        width: 22%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header div.menu-hamburguesa i{
+        display: none
+    };
+
+    header nav {
+        font-size: 12px;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+    header nav {
+        display: flex;
+        font-size: 12px;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    header nav div ul.tienda{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: space-between;
+    }
+    header nav div ul.datos{
+        display: flex;
+        flex-wrap: wrap;
+        align-self:flex-end;
+        justify-content: space-between
+    }
+}
+
+    
+ 
+
+
